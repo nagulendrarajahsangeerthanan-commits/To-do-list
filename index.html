@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pro To-Do App</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo App</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="app">
-  <h1>📝 My Tasks</h1>
+<div class="container">
+    <h1>📋To-Do List</h1>
 
-  <div class="input-box">
-    <input id="taskInput" placeholder="What needs to be done?" />
-  </div>
-
-  <ul id="taskList"></ul>
-
-  <div class="footer">
-    <span id="taskCount"></span>
-
-    <div class="filters">
-      <button data-filter="all" class="active">All</button>
-      <button data-filter="active">Active</button>
-      <button data-filter="completed">Completed</button>
+    <!-- Input -->
+    <div class="input-box">
+        <input type="text" id="taskInput" placeholder="Enter a task...">
+        <button onclick="addTask()">Add</button>
     </div>
 
-    <button id="clearCompleted">Clear Completed</button>
-  </div>
+    <!-- Filters -->
+    <div class="filters">
+        <button onclick="setFilter('all', event)" class="active">All</button>
+        <button onclick="setFilter('active', event)">Active</button>
+        <button onclick="setFilter('completed', event)">Completed</button>
+    </div>
 
-  <div id="congrats" class="hidden">
-    🎉 Congratulations! You finished all tasks!
-  </div>
+    <!-- Task list -->
+    <ul id="taskList"></ul>
+</div>
+
+<!-- 🎉 Congratulations popup -->
+<div id="congrats" class="congrats hidden">
+    🎉 Congratulations! All tasks completed!
 </div>
 
 <script src="script.js"></script>
