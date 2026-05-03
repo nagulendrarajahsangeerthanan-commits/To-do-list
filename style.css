@@ -1,19 +1,32 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #bd9a4e, #5e2e85);
-    display: flex;
-    justify-content: center;
-    padding-top: 60px;
+    
+    background-image: url(images/cg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     margin: 0;
+     height: 100vh;
+     display: flex;
+     justify-content: center;  /* horizontal center */
+     align-items: center;      /* vertical center */
+     
+
+    
+        
+
+    
 }
 
 /* Main box */
 .container {
     width: 420px;
-    height: 400px;
-    background: white;
+    height: 600px;
+    background: rgb(214, 214, 214);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+    
+    
 }
 
 h1 {
@@ -31,7 +44,7 @@ input {
     flex: 1;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ac3838;
 }
 
 button {
